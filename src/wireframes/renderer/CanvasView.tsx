@@ -6,8 +6,8 @@
 */
 
 import { Rect2, Vec2 } from '@app/core';
-import * as React from 'react';
-import * as svg from 'svg.js';
+import React from 'react';
+import svg from 'svg.js';
 
 export interface CanvasViewProps {
     // The zoomed width of the canvas.
@@ -69,5 +69,9 @@ export const CanvasView = (props: CanvasViewProps) => {
         }
     }, [viewSize, viewBox, zoom, zoomedSize, document]);
 
-    return <div className={className} ref={ref} />;
+    return (
+        <>
+            <div className={className} ref={ref} />
+        </>
+    )
 };

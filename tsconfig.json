@@ -8,6 +8,7 @@
     "jsx": "react",
     "lib": ["es6", "dom"],
     "moduleResolution": "node",
+    "esModuleInterop": true,
     "noEmitHelpers": true,
     "noImplicitAny": true,
     "noUnusedLocals": true,

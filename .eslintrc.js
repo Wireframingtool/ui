@@ -64,10 +64,6 @@ module.exports = {
         "@typescript-eslint/no-use-before-define": "off",
         "@typescript-eslint/no-shadow": "off",
         "@typescript-eslint/return-await": "off",
-        "@typescript-eslint/quotes": [
-            "error",
-            "single"
-        ],
         "@typescript-eslint/semi": [
             "error",
             "always"

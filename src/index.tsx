@@ -25,6 +25,9 @@ import { App } from './App';
 import './index.scss';
 import { registerServiceWorker } from './registerServiceWorker';
 import { createClassReducer, mergeAction } from './wireframes/model/actions/utils';
+import Login from './auth/Login';
+import Signup from './auth/Signup';
+import Verify from './auth/Verify';
 
 const editorRenderers = registerRenderers();
 const editorSerializer = new Serializer(editorRenderers);
@@ -80,7 +83,10 @@ const Root = (
             <RendererContext.Provider value={editorRenderers}>
                 <Provider store={store}>
                     <ConnectedRouter history={history}>
-                        <Route path='/:token?' component={App} />
+                        <Route exact={true} path='/:token?' component={App} />
+                        <Route exact={true} path='/auth/login' render={() => <Login />} />
+                        <Route exact={true} path='/auth/signup' render={() => <Signup />} />
+                        <Route exact={true} path='/verify/:token?' render={() => <Verify />} />
                     </ConnectedRouter>
                 </Provider>
             </RendererContext.Provider>
