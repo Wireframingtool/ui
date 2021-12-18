@@ -6,7 +6,7 @@
  */
 
 import { RendererContext } from "@app/context";
-import { addDiagram, getDiagrams } from "@app/wireframes/model";
+import { addDiagram } from "@app/wireframes/model";
 import { sizeInPx } from "@app/core";
 import {
   addIcon,
@@ -179,12 +179,6 @@ export const EditorView = ({ spacing }: EditorViewProps) => {
 
   return (
     <div ref={ref} className="editor-view" style={style}>
-      <span
-        style={{ color: "black", cursor: "pointer" }}
-        onClick={() => console.log(getDiagrams(state))}
-      >
-        Show List
-      </span>
       <Editor
         diagram={getDiagram(state)}
         rendererService={renderer}
