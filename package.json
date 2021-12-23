@@ -30,7 +30,7 @@
     "tslib": "2.3.1"
   },
   "scripts": {
-    "start": "webpack serve --config config/webpack.config.js --port 3002 --hot --https --pfx dev/squidex-dev.pfx --pfx-passphrase password",
+    "start": "webpack serve --config config/webpack.config.js --port 3002",
     "test": "karma start",
     "test:coverage": "karma start karma.coverage.conf.js",
     "test:clean": "rimraf _test-output",
