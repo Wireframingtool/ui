@@ -1,7 +1,7 @@
 {
-  "name": "mydraft.cc",
-  "short_name": "mydraft.cc",
-  "description": "Open Source Wireframe Editor",
+  "name": "Wireframing.app",
+  "short_name": "Wireframing.app",
+  "description": "Wireframe Editor",
   "dir": "auto",
   "lang": "en-US",
   "display": "standalone",
