@@ -17,7 +17,7 @@ import { loadDiagramAsync, newDiagram, selectTab, showInfoToast, toggleLeftSideb
 import { texts } from './texts';
 import { PresentationView } from './wireframes/components/PresentationView';
 
-const logo = require('./images/logo.svg').default;
+// const logo = require('./images/logo.svg').default;
 
 export const App = () => {
     const dispatch = useDispatch();
@@ -75,8 +75,9 @@ export const App = () => {
     return (
         <>
             <Layout className='screen-mode'>
-                <Layout.Header>
-                    <img className='logo' src={logo} alt='mydraft.cc' />
+                <Layout.Header style={{ backgroundColor: 'black' }}>
+                    {/* <img className='logo' src={logo} alt='mydraft.cc' /> */}
+                    <span style={{ color: 'white', fontSize: '30px', position: 'absolute', left: '10px', fontWeight: 'bold' }}>Wireframing.app</span>
 
                     <HistoryMenu />
                     <span className='menu-separator' />

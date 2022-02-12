@@ -21,6 +21,8 @@ import { createInitialAssetsState, createInitialLoadingState, createInitialUISta
 import * as Reducers from '@app/wireframes/model/actions';
 import { registerRenderers } from '@app/wireframes/shapes';
 import { App } from './App';
+import Login from './auth/Login';
+import Signup from './auth/Signup';
 import { registerServiceWorker } from './registerServiceWorker';
 import { createClassReducer, mergeAction } from './wireframes/model/actions/utils';
 import './index.scss';
@@ -77,7 +79,9 @@ const Root = (
             <RendererContext.Provider value={editorRenderers}>
                 <Provider store={store}>
                     <ConnectedRouter history={history}>
-                        <Route path='/:token?' component={App} />
+                        <Route exact path='/:token?' component={App} />
+                        <Route exact path='/auth/login' component={Login} />
+                        <Route exact path='/auth/signup' component={Signup} />
                     </ConnectedRouter>
                 </Provider>
             </RendererContext.Provider>

@@ -69,7 +69,7 @@ export const SettingsMenu = React.memo((props: SettingsMenuProps) => {
     return (
         <>
             <Dropdown overlay={exportMenu} placement='bottomRight'>
-                <Button className='menu-item' size='large'>
+                <Button style={{ color: 'white' }} className='menu-item' size='large'>
                     <ExportOutlined />
                 </Button>
             </Dropdown>
@@ -77,7 +77,7 @@ export const SettingsMenu = React.memo((props: SettingsMenuProps) => {
             <Shortcut onPressed={doToggle} keys='ctl+o' />
 
             <Tooltip mouseEnterDelay={1} title={texts.common.optionsTooltip}>
-                <Button className='menu-item' size='large' onClick={doToggle}>
+                <Button style={{ color: 'white' }} className='menu-item' size='large' onClick={doToggle}>
                     <SettingOutlined />
                 </Button>
             </Tooltip>

@@ -152,12 +152,10 @@ module.exports = function configure(env) {
                 // Favicon source logo
                 logo: 'src/images/logo-square.png',
                 // Favicon app title
-                title: 'MyDraft',
+                title: 'Wireframing.app',
                 favicons: {
-                    appName: 'mydraft.cc',
-                    appDescription: 'Open Source Wireframe Editor',
-                    developerName: 'Sebastian Stehle',
-                    developerUrl: 'https://sstehle.com',
+                    appName: 'Wireframing.app',
+                    appDescription: 'Wireframe Editor',
                     start_url: '/',
                 },
             }),

@@ -24,6 +24,7 @@ export const Shapes = () => {
     const shapesFiltered = useStore(getFilteredShapes);
     const shapesFilter = useStore(getShapesFilter);
 
+    // console.log(shapesFiltered);
     const storeContext = React.useContext(ReactReduxContext);
 
     const cellRenderer = React.useCallback((shape: ShapeInfo) => {
@@ -34,6 +35,7 @@ export const Shapes = () => {
                 dispatch(addVisual(selectedDiagramId, shape.name, 100, 100));
             }
         };
+        console.log(shape);
 
         return (
             <div className='asset-shape'>
